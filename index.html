@@ -8,12 +8,18 @@
 
     <title>Document</title>
   </head>
-  <body>
+  <body class="content">
     <div id="app">
-      <button id="openMap">Open Map</button>
-      <!-- Контейнер для отображения карты -->
-      <div id="mapContainer">
-        <h1>ymaps</h1>
+      <div>
+        <button id="openMap">Open Map</button>
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <div id="mapContainer">
+              <h1>ymaps</h1>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script

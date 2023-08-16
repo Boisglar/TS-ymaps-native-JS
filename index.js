@@ -1,5 +1,23 @@
 // script.js
 
+const openModalBtn = document.getElementById('openMap');
+const closeModalBtn = document.getElementById('closeModalBtn');
+const modal = document.getElementById('modal');
+
+openModalBtn.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+closeModalBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
 // Создаем переменные для кнопки и контейнера карты
 const openMapButton = document.getElementById('openMap');
 const mapContainer = document.getElementById('mapContainer');
